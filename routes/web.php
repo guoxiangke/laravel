@@ -20,3 +20,10 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/mosaic', function () {
+    return view('mosaic.ori');
+});
+Route::get('/admin', function () {
+    return view('mosaic.test');
+});
